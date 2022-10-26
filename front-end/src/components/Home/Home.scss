@@ -1,0 +1,95 @@
+@import "../../styles/variables.scss";
+
+.home-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding-top: 4em;
+    align-items: center;
+    flex-direction: column;
+
+    &__container {
+        gap: 4rem;
+        width: 50%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        &__inputSection {
+            gap: 1rem;
+            width: 100%;
+            height: auto;
+            display: flex;
+
+            input {
+                width: 100%;
+                height: 5vh;
+                padding: 0% 6px;
+            }
+
+            button {
+                border: none;
+                display: flex;
+                color: #FFF;
+                cursor: pointer;
+                font-size: 1.7rem;
+                background: #000;
+                border-radius: 5px;
+                align-items: center;
+                justify-content: center;
+                transition: .3s ease all;
+            }
+
+            button:hover {
+                background: #00f;
+            }
+
+            button:active {
+                background: #000;
+                border-radius: 0px;
+            }
+        }
+
+        &__outSection {
+            gap: 3rem;
+            width: 100%;
+            height: 50vh;
+            overflow: scroll;
+            padding: 0% 2rem;
+            flex-direction: column;
+            border: 1px solid #000;
+
+            .text-section {
+                gap: 10px;
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+            }
+
+            button {
+                border: none;
+                display: flex;
+                color: #FFF;
+                cursor: pointer;
+                padding: 4px 6px;
+                font-size: 1.5rem;
+                background: #000;
+                border-radius: 5px;
+                align-items: center;
+                justify-content: center;
+                transition: .3s ease all;
+            }
+
+            button:hover {
+                background: #00f;
+            }
+
+            button:active {
+                background: #000;
+                border-radius: 0px;
+            }
+        }
+    }
+}
